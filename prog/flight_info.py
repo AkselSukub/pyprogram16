@@ -26,3 +26,8 @@ def print_flights_to_destination(flights, destination):
     else:
         for flight in matching_flights:
             print(f"Номер рейса: {flight['flight_number']}, тип самолета: {flight['aircraft_type']}")
+
+if __name__ == "__main__":
+    flights = input_flight_info()
+    destination = input("Введите пункт назначения для поиска рейсов: ")
+    print_flights_to_destination(flights, destination)
