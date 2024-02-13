@@ -5,10 +5,14 @@
 
 import collection_converter
 
-type = input("Введите тип коллекции (list или tuple): ")
-numbers_string = input("Введите список целых чисел, разделенных пробелами: ")
+def main():
+    type = input("Введите тип коллекции (list или tuple): ")
+    numbers_string = input("Введите список целых чисел, разделенных пробелами: ")
 
-converter = collection_converter.collection_converter(type)
-collection = converter(numbers_string)
+    converter = collection_converter.collection_converter(type)
+    collection = converter(numbers_string)
 
-print(collection)
+    print(collection)
+
+if __name__ == "__main__":
+    main()
